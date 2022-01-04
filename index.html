@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <!-- js -->
+    <script defer src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body data-theme="dark">
+    <header>
+      <label class="logo">todo</label>
+      <span class="theme-btn dark"></span>
+    </header>
+
+    <div class="todo-input">
+      <input
+        type="text"
+        name="text"
+        id="todo-input"
+        placeholder="Create a new todo"
+      />
+      <button class="add-btn">Add</button>
+    </div>
+
+    <div class="todo-tasks">
+      <ul class="todo-tasks-container" id="sortableList"></ul>
+    </div>
+
+    <div class="for-mobile">
+      <span class="no-of-items"><span>0</span> items left</span>
+      <span class="clear-completed-btn">Clear Completed</span>
+    </div>
+
+    <div class="task-sort-btn-container">
+      <span class="no-of-items"><span>0</span> items left</span>
+
+      <div class="filters">
+        <label for="all">
+          <input type="radio" name="filter" id="all" checked />
+          <span class="filter all-btn active">All</span>
+        </label>
+        <label for="active">
+          <input type="radio" name="filter" id="active" />
+          <span class="filter active-btn">Active</span>
+        </label>
+        <label for="completed">
+          <input type="radio" name="filter" id="completed" />
+          <span class="filter completed-btn">Completed</span>
+        </label>
+      </div>
+
+      <span class="clear-completed-btn">Clear Completed</span>
+    </div>
+
+    <p class="line">Drag and drop to reorder list</p>
+    <p class="line line-2">Scroll to view all the tasks</p>
+  </body>
+</html>

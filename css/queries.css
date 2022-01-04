@@ -1,0 +1,79 @@
+/*********** for devices with width of 800px or more **********/
+@media (min-width: 700px) {
+  bodY::before {
+    background-position: top left;
+  }
+}
+
+/*********** for devices with width of 800px or more **********/
+@media (min-width: 800px) {
+  header,
+  .todo-input,
+  .todo-tasks,
+  .task-sort-btn-container {
+    width: 550px;
+  }
+
+  body::before {
+    height: 40%;
+  }
+  header {
+    margin-top: 80px;
+  }
+
+  .for-mobile {
+    display: none;
+  }
+  .task-sort-btn-container {
+    justify-content: space-between;
+    margin-top: 0;
+    border-radius: 0 0 5px 5px;
+  }
+  .task-sort-btn-container .no-of-items,
+  .task-sort-btn-container .clear-completed-btn {
+    display: inline-block;
+  }
+}
+
+/*********** for devices with width of 1200px or more **********/
+@media (min-width: 1200px) {
+  .todo-tasks-container {
+    /* border-radius: 0 0 5px 5px; */
+    max-height: 301px;
+    overflow: auto;
+    overscroll-behavior: auto;
+  }
+
+  .delete-btn {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .task:hover .delete-btn {
+    opacity: 1;
+  }
+
+  /* .task-sort-btn-container{ */
+  /* margin: 0; */
+  /* } */
+
+  .line {
+    display: block;
+  }
+}
+
+/*********** for devices with width of 1650px or more **********/
+@media (min-width: 1650px) {
+  .todo-tasks-container {
+    max-height: 406px;
+  }
+  .todo-tasks-container .task label span:before {
+    top: 0 !important;
+  }
+}
+
+/*********** for devices with height of 1000px or more **********/
+@media (min-height: 1000px) {
+  header {
+    margin-top: 200px;
+  }
+}
