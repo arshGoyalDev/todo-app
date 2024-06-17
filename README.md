@@ -18,11 +18,6 @@ Users should be able to:
 - Toggle light and dark mode
 - Drag and drop to reorder items on the list
 
-## Links
-
-- [Solution URL](https://www.frontendmentor.io/solutions/todo-app-Ist3CjFqd)
-- [Live Site URL](https://todo-app-developingweb.vercel.app)
-
 ## Built with
 
 - Semantic HTML5 markup
@@ -32,4 +27,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@developingWeb](https://www.frontendmentor.io/profile/developingWeb)
+- Frontend Mentor - [@arshGoyalDev](https://www.frontendmentor.io/profile/arshGoyalDev)
